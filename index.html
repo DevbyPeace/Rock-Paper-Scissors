@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unscramble game</title>
+
+    <link rel="icon" href="/images/asteroid.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Rubik+Vinyl&family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="sixtyfour">Rock,Paper,Scissors</h1>
+    <div class="header">
+      <div class="rules poppins-regular">
+        <h2>Rules</h2>
+        <li>Rock beats scissors 🏔 > ✂</li>
+        <li>Scissors beats paper ✂ > 📃</li>
+        <li>Paper beats Rock 📃 > 🏔</li>
+        <li>Same selection results in a retry 🔁 </li>
+        <li>First to 10 wins 🏆 </li>
+      </div>
+      <div class="scores sixtyfour">
+        Scores = <span class="high"> 0 </span>
+        <div class="vs">-</div>
+        <span class="low"> 0 </span>
+      </div>
+    </div>
+
+    <div class="versus">
+      <div class="game rubik-vinyl-regular">
+        <div id="rock">
+          <img src="/images/rocks.png" class="ass" alt="rock" />
+          Rock
+        </div>
+        <div id="paper">
+          <img src="/images/paper.png" class="ass" alt="rock" />
+
+          Paper
+        </div>
+        <div id="scissors">
+          <img src="/images/scissors.png" class="ass" alt="rock" />
+
+          Scissors
+        </div>
+      </div>
+
+      <div class="comp rubik-vinyl-regular">Make a selection!</div>
+    </div>
+
+    <div class="result sixtyfour"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
